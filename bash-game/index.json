@@ -1,0 +1,15 @@
+{
+  "title": "BashGame",
+  "description": "Learn linux with a game",
+  "details": {
+    "intro": {
+      "text": "intro.md",
+      "foreground": "foreground.sh"
+    },
+    "steps": [
+    ]
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  }
+}
