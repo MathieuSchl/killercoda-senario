@@ -1,6 +1,6 @@
 {
   "title": "Node-18.13.0",
-  "description": "Let users copy or exec code blocks",
+  "description": "Env for node js with version 18.13.0",
   "details": {
     "intro": {
       "text": "intro.md",
