@@ -7,7 +7,7 @@ as a tool to help students at the
 shell, in a way that encourages learning while also having fun. 
 
 This is an environnement in Killercoda for GameShell.
-I only create the environnement, the game repo is available [here](https://github.com/phyver/GameShell)
+I haven't developed the game, the game repo is available [here](https://github.com/phyver/GameShell)
 
 Playing GameShell, standard commands
 ------------------------------------
