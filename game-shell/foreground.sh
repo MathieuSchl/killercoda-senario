@@ -1,16 +1,19 @@
-echo "GameShell starting"
-echo "Please wait"
+echo 'echo "GameShell starting"' > /tmp/run_game.sh
+echo 'echo "Please wait"' >> /tmp/run_game.sh
+echo '' >> /tmp/run_game.sh
+echo 'while true; do' >> /tmp/run_game.sh
+echo '    # Vérifie si le fichier existe' >> /tmp/run_game.sh
+echo '    if [ -e "/tmp/gameshell.sh" ]; then' >> /tmp/run_game.sh
+echo '        break' >> /tmp/run_game.sh
+echo '    else' >> /tmp/run_game.sh
+echo '        echo -n "."' >> /tmp/run_game.sh
+echo '    fi' >> /tmp/run_game.sh
+echo '' >> /tmp/run_game.sh
+echo '    \# Attend une seconde avant de vérifier à nouveau' >> /tmp/run_game.sh
+echo '    sleep 1' >> /tmp/run_game.sh
+echo 'done' >> /tmp/run_game.sh
 
-while true; do
-    # Vérifie si le fichier existe
-    if [ -e "/tmp/gameshell.sh" ]; then
-        break
-    else
-        echo -n "."
-    fi
+echo 'runuser -l gameshell -c "bash /tmp/gameshell.sh"' >> /tmp/run_game.sh
 
-    # Attend une seconde avant de vérifier à nouveau
-    sleep 1
-done
-
-runuser -l gameshell -c "bash gameshell.sh"
+cd /tmp
+sh /tmp/run_game.sh
