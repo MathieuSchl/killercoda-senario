@@ -1,4 +1,5 @@
-echo 'echo "GameShell starting"' > /tmp/run_game.sh
+echo 'clear' > /tmp/run_game.sh
+echo 'echo "GameShell starting"' >> /tmp/run_game.sh
 echo 'echo "Please wait"' >> /tmp/run_game.sh
 echo '' >> /tmp/run_game.sh
 echo 'while true; do' >> /tmp/run_game.sh
@@ -13,7 +14,7 @@ echo '    \# Attend une seconde avant de vérifier à nouveau' >> /tmp/run_game.
 echo '    sleep 1' >> /tmp/run_game.sh
 echo 'done' >> /tmp/run_game.sh
 
-echo 'runuser -l gameshell -c "bash /tmp/gameshell.sh"' >> /tmp/run_game.sh
+#echo 'runuser -l gameshell -c "bash /tmp/gameshell.sh"' >> /tmp/run_game.sh
 
 cd /tmp
 sh /tmp/run_game.sh
